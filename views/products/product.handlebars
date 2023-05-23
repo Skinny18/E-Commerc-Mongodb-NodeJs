@@ -1,0 +1,11 @@
+<h1>{{product.name}}</h1>
+
+<div class="product-page">
+    <img height="150px" src="{{product.image}}" alt="{{product.name}}">
+    <p>Preço R$:{{product.price}}</p>
+    <p>Descrição:{{product.description}}</p>
+    <form action="/products/delete/{{product._id}}" method="POST" >
+            <button type="submit" class="delete-btn">Excluir</button>
+    </form>
+    <a href="/products/edit/{{product._id}}"><button class="btn" >Editar</button></a>
+</div>
